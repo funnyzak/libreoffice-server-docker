@@ -1,0 +1,13 @@
+version: "3.1"
+services:
+  libreoffice:
+    image: funnyzak/libreoffice-server
+    container_name: libreoffice
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Asia/Shanghai
+    ports:
+      - 3000:3000 # libreoffice
+      - 3001:3001 # webserver
+    restart: unless-stopped

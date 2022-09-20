@@ -28,8 +28,11 @@ RUN chmod -R 777 /app
 WORKDIR /app
 VOLUME /app
 
+RUN git clone https://github.com/funnyzak/libreoffice-server.git /app/nodeapp
+
+
 COPY ./cmd.sh /
 
-EXPOSE 3000 2058
+EXPOSE 3000 3001
 
 CMD ["/bin/bash", "/cmd.sh"]

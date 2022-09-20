@@ -17,7 +17,7 @@ LABEL org.label-schema.vendor="potato<silenceace@gmail.com>" \
 
 RUN \
     echo "**** install packages ****" && \
-    apk add nodejs npm git && \
+    apk add nodejs npm git cups-libs fontconfig && \
     echo "**** cleanup ****" && \
     apk del --purge \
     rm -rf \

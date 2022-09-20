@@ -28,6 +28,8 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=Asia/Shanghai
+    # volumes:
+    #   - ./media/fonts:/usr/share/fonts/custom # 自定义字体
     ports:
       - 3000:3000 # libreoffice web editor
       - 3001:3001 # web api

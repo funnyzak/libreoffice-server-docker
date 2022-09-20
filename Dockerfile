@@ -25,11 +25,12 @@ RUN \
 
 RUN mkdir -p /app
 RUN chmod -R 777 /app
-WORKDIR /app
 VOLUME /app
 
 RUN git clone https://github.com/funnyzak/libreoffice-server.git /app/nodeapp
 RUN npm ci --prefix /app/nodeapp
+
+WORKDIR /app/nodeapp
 
 COPY ./cmd.sh /
 

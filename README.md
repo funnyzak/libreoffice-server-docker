@@ -32,7 +32,7 @@ services:
     #   - ./media/fonts:/usr/share/fonts/custom # 自定义字体
     ports:
       - 3000:3000 # libreoffice web editor
-      - 3001:3001 # web api
+      - 3001:8038 # web api
     restart: unless-stopped
 ```
 

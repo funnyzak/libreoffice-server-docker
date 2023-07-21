@@ -11,5 +11,5 @@ services:
     #   - ./media/fonts:/usr/share/fonts/custom # 自定义字体
     ports:
       - 3000:3000 # libreoffice
-      - 3001:3001 # webserver
+      - 3001:8038 # webserver
     restart: unless-stopped

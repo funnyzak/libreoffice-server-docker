@@ -36,6 +36,6 @@ WORKDIR /app/nodeapp
 
 COPY ./cmd.sh /
 
-EXPOSE 3000 3001
+EXPOSE 3000 8038
 
 CMD ["/bin/bash", "/cmd.sh"]

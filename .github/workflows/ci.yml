@@ -38,7 +38,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           context: .
-          platforms: linux/amd64
+          platforms: linux/amd64,linux/arm64
           push: true
           tags: funnyzak/libreoffice-server:${{ steps.get_version.outputs.VERSION }}
 
@@ -47,7 +47,7 @@ jobs:
         uses: docker/build-push-action@v3
         with:
           context: .
-          platforms: linux/amd64
+          platforms: linux/amd64,linux/arm64
           push: true
           tags: funnyzak/libreoffice-server:latest
 

@@ -1,4 +1,4 @@
-FROM linuxserver/libreoffice:latest
+FROM linuxserver/libreoffice:7.5.5
 
 ENV LANG=C.UTF-8
 
